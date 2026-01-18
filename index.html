@@ -14,136 +14,247 @@
       <span class="logo">♞ Ishani Bhat</span>
     </div>
     <nav class="nav-right">
-      <a href="#opening">Opening</a>
+      <a href="#opening">About</a>
       <a href="#middle-game">Projects</a>
+      <a href="#concepts">Skills</a>
       <a href="#research">Research</a>
       <a href="#endgame">Contact</a>
     </nav>
   </header>
-  
 
-  <main>
-    <!-- Hero / Opening -->
-    <section id="opening" class="section hero">
-      <div class="hero-content">
-        <h1>Hi, I'm <span class="accent">Ishani</span>.</h1>
-        <p class="hero-subtitle">
-          Data Science grad student @ UW · ML & analytics for prediction, personalization, and accessibility.
-        </p>
-        <p class="hero-text">
-          I build ML and data products that sit at the intersection of research, visualization, and social impact —
-          with a special interest in neurodiversity and healthcare.
-        </p>
-        <div class="hero-buttons">
-          <a class="btn primary" href="#middle-game">View Projects</a>
-          <a class="btn secondary" href="/Ishani_Bhat_CV.pdf" target="_blank">Download CV</a>
-          <a class="btn ghost" href="https://github.com/ishani-bhat4" target="_blank">GitHub</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Projects / Middle Game -->
-    <section id="middle-game" class="section">
-      <h2 class="section-title">Middle Game · Projects</h2>
-      <p class="section-subtitle">
-        Selected projects that represent how I think about data, models, and systems.
+  <!-- Hero / Opening -->
+  <section id="opening" class="section hero">
+    <div class="hero-content">
+      <p class="hero-kicker">Data Science · Machine Learning · Applied AI</p>
+      <h1>Hi, I'm <span class="accent">Ishani</span>.</h1>
+      <p class="hero-subtitle">
+        Data Science grad student @ UW • Building ML systems for prediction, personalization & accessibility.
       </p>
-
-      <div class="cards">
-
-        <article class="card">
-          <h3>🏏 Cricket Shot Recognition</h3>
-          <p class="card-tagline">Pose-based deep learning for real-time cricket shot classification.</p>
-          <ul class="card-points">
-            <li>Built a real-time classifier using OpenPose + deep learning (≈99.4% accuracy).</li>
-            <li>Designed training pipeline, data labeling, and evaluation for broadcast footage.</li>
-            <li>Explored deployment considerations for live sports analytics.</li>
-          </ul>
-          <p class="card-tech">Python · OpenPose · CNN/RNN</p>
-          <div class="card-links">
-            <a href="https://github.com/ishani-bhat4/cricket-shot-recognition" target="_blank">Code</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>🎬 Netflix Movie Analytics Dashboard</h3>
-          <p class="card-tagline">Interactive analytics on global movie catalog: genre, language, budget, ratings.</p>
-          <ul class="card-points">
-            <li>Designed an interactive dashboard to explore content trends across decades.</li>
-            <li>Cleaned and transformed movie metadata; analyzed genre and language diversity.</li>
-            <li>Deployed front-end via Netlify for easy sharing and review.</li>
-          </ul>
-          <p class="card-tech">Python · Pandas · Plotly · Netlify</p>
-          <div class="card-links">
-            <a href="https://github.com/ishani-bhat4/movie-dashboard" target="_blank">Code</a>
-            <a href="https://dancing-pixie-0f86ce.netlify.app/" target="_blank">Live Demo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>🔁 Customer Churn Prediction</h3>
-          <p class="card-tagline">End-to-end ML pipeline for predicting subscription churn.</p>
-          <ul class="card-points">
-            <li>Engineered behavioral and transactional features from raw customer data.</li>
-            <li>Compared tree-based models with logistic regression and tuned via cross-validation.</li>
-            <li>Used SHAP to explain drivers of churn and communicate findings to stakeholders.</li>
-          </ul>
-          <p class="card-tech">Python · Scikit-learn · SHAP</p>
-          <div class="card-links">
-            <a href="https://github.com/ishani-bhat4/churn-risk-dashboard" target="_blank">Code</a>
-            <a href="https://churn-risk-dashboard.streamlit.app/" target="_blank">Live Demo</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="section">
-      <h2 class="section-title">Research</h2>
-      <p class="section-subtitle">
-        Work at the intersection of machine learning, computer vision, and applied data science.
+      <p class="hero-text">
+        I work across machine learning, analytics, and visualization — from tabular ML pipelines and explainable models
+        to interactive dashboards and computer vision.
       </p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#middle-game">View Projects</a>
+        <a class="btn secondary" href="resume.pdf" target="_blank">Resume</a>
+        <a class="btn secondary" href="https://github.com/ishani-bhat4" target="_blank">GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/ishani-bhat/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-      <div class="research-list">
-        <div class="research-item">
-          <h3>Classifying Gaze Patterns for ASD Screening</h3>
-          <p>IEEE ICITIIT, 2025</p>
+  <!-- Projects / Middle Game -->
+  <section id="middle-game" class="section">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">
+      Selected work that represents how I think about data, models, and real-world impact.
+    </p>
+
+    <div class="cards">
+
+      <!-- Cricket -->
+      <article class="card">
+        <h3>🏏 Cricket Shot Recognition</h3>
+        <p class="card-tagline">Pose-based deep learning for real-time cricket shot classification.</p>
+        <ul class="card-points">
+          <li>Built a real-time pipeline using OpenPose to extract skeletal keypoints from IPL video frames.</li>
+          <li>Trained deep models on temporal motion patterns for shot classification (~99.4% accuracy on test data).</li>
+          <li>Explored latency and deployment considerations for live sports analytics workflows.</li>
+        </ul>
+        <p class="card-tech">Python · OpenPose · CNN/ANN · Computer Vision</p>
+        <div class="card-links">
+          <a href="https://github.com/ishani-bhat4/cricket-shot-recognition" target="_blank">Code</a>
         </div>
-        <div class="research-item">
-          <h3>Synthetic Data Augmentation Using LLMs</h3>
-          <p>IEEE ICEEICT, 2024</p>
+      </article>
+
+      <!-- Netflix -->
+      <article class="card">
+        <h3>🎬 Netflix Movie Analytics Dashboard</h3>
+        <p class="card-tagline">Interactive analytics on global movie catalog: genre, language, budget, ratings.</p>
+        <ul class="card-points">
+          <li>Modeled 5K+ movie records to study genre mix, ratings trajectories, and language diversification over time.</li>
+          <li>Designed an interactive dashboard to explore catalog trends and content strategy questions.</li>
+          <li>Deployed via Netlify for easy sharing and review in application workflows.</li>
+        </ul>
+        <p class="card-tech">Python · Pandas · Plotly · Netlify</p>
+        <div class="card-links">
+          <a href="https://github.com/ishani-bhat4/movie-dashboard" target="_blank">Code</a>
+          <a href="https://dancing-pixie-0f86ce.netlify.app/" target="_blank">Live Demo</a>
         </div>
-        <div class="research-item">
-          <h3>Tender Coconut Classification (DenseNet)</h3>
-          <p>IEEE SPIN, 2023</p>
+      </article>
+
+      <!-- Churn -->
+      <article class="card">
+        <h3>🔁 Customer Churn Prediction</h3>
+        <p class="card-tagline">End-to-end ML pipeline for predicting subscription churn with explainability.</p>
+        <ul class="card-points">
+          <li>Engineered behavioral and transactional features from raw subscription data.</li>
+          <li>Benchmarked tree-based models vs. logistic regression using ROC-AUC, F1, and calibration.</li>
+          <li>Used SHAP to surface churn drivers and expose global/local feature attributions in a dashboard.</li>
+        </ul>
+        <p class="card-tech">Python · scikit-learn · SHAP · Streamlit</p>
+        <div class="card-links">
+          <a href="https://github.com/ishani-bhat4/churn-risk-dashboard" target="_blank">Code</a>
+          <a href="https://churn-risk-dashboard.streamlit.app/" target="_blank">Live Demo</a>
         </div>
-        <div class="research-item">
-          <h3>Wine Quality &amp; Yield Prediction</h3>
-          <p>Journal of Wine Research, 2025</p>
+      </article>
+
+      <!-- Student Risk -->
+      <article class="card">
+        <h3>📚 Student Risk Prediction Dashboard</h3>
+        <p class="card-tagline">Early-alert classification for at-risk students with interpretable outputs.</p>
+        <ul class="card-points">
+          <li>Designed a classification-based early warning system using engagement and performance features.</li>
+          <li>Evaluated models using ROC-AUC and recall@top-K to prioritize recall for at-risk cohorts.</li>
+          <li>Built a Streamlit UI with SHAP-based explanations and uncertainty cues for responsible decision support.</li>
+        </ul>
+        <p class="card-tech">Python · scikit-learn · SHAP · Streamlit</p>
+        <div class="card-links">
+          <a href="https://github.com/ishani-bhat4/student-risk-dashboard" target="_blank">Code</a>
+          <!-- Add live demo link when deployed -->
         </div>
+      </article>
+
+      <!-- Synthetic Data -->
+      <article className="card">
+        <h3>🧪 Synthetic Time-Series via LLMs</h3>
+        <p class="card-tagline">LLM-driven augmentation for industrial time-series under data scarcity.</p>
+        <ul class="card-points">
+          <li>Applied LLM-based augmentation to industrial process signals to handle rare events and limited labels.</li>
+          <li>Benchmarked synthetic vs. real fidelity via downstream performance degradation across 15 ML models.</li>
+          <li>Framed evaluation around robustness under distribution shift rather than just point metrics.</li>
+        </ul>
+        <p class="card-tech">Python · scikit-learn · LLM-based augmentation</p>
+        <div class="card-links">
+          <a href="https://github.com/ishani-bhat4/llm-synthetic-timeseries" target="_blank">Code</a>
+          <!-- Add paper link if/when public -->
+        </div>
+      </article>
+
+      <!-- Wine Regression -->
+      <article class="card">
+        <h3>🍷 Wine Yield & Quality Prediction</h3>
+        <p class="card-tagline">Regression models for vineyard yield and wine quality forecasting.</p>
+        <ul class="card-points">
+          <li>Trained Random Forest, KNN, and ANN models on vineyard and climatic data for yield + quality prediction.</li>
+          <li>Evaluated models using RMSE, MAE, and R² to quantify predictive reliability.</li>
+          <li>Exposed inference through a Streamlit app for interactive “what-if” analysis by stakeholders.</li>
+        </ul>
+        <p class="card-tech">Python · scikit-learn · Streamlit</p>
+        <div class="card-links">
+          <a href="https://github.com/ishani-bhat4/wine-yield-quality" target="_blank">Code</a>
+          <!-- Add demo link if deployed -->
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Skills / Concepts -->
+  <section id="concepts" class="section">
+    <h2 class="section-title">Skills & Focus Areas</h2>
+    <p class="section-subtitle">
+      A snapshot of how I work with data, models, and systems.
+    </p>
+
+    <div class="concepts-list">
+
+      <div class="concept">
+        <h3>Machine Learning & MLE</h3>
+        <p>End-to-end ML: from raw data → features → models → evaluation → explainability.</p>
+        <ul>
+          <li>Supervised ML (classification, regression)</li>
+          <li>Tree-based models, XGBoost, regularization</li>
+          <li>Evaluation: ROC-AUC, F1, RMSE, calibration</li>
+          <li>Explainability with SHAP & model introspection</li>
+        </ul>
       </div>
 
-      <p class="research-links">
-        <a href="https://scholar.google.com/citations?user=QO3ezwQAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      </p>
-    </section>
-
-    <!-- Contact / Endgame -->
-    <section id="endgame" class="section">
-      <h2 class="section-title">Endgame · Get in Touch</h2>
-      <p class="section-subtitle">
-        Open to DS/ML internships, research collaborations, and thoughtful conversations about AI for social impact.
-      </p>
-
-      <div class="contact">
-        <p><strong>Email:</strong> <a href="mailto:ishanibhat4@gmail.com">ishanibhat4@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/ishani-bhat4" target="_blank">ishani-bhat4</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ishani-bhat/" target="_blank">LinkedIn Profile</a></p>
+      <div class="concept">
+        <h3>Analytics & Visualization</h3>
+        <p>Turning messy data into dashboards and tools that people actually use.</p>
+        <ul>
+          <li>Pandas, SQL, feature engineering</li>
+          <li>Plotly, Streamlit, Tableau dashboards</li>
+          <li>Data modeling and ETL (Alteryx, Python)</li>
+          <li>Experimental, metric-driven thinking</li>
+        </ul>
       </div>
-    </section>
-  </main>
+
+      <div class="concept">
+        <h3>AI for Social Good</h3>
+        <p>Applying ML in autism support, education, and accessibility contexts.</p>
+        <ul>
+          <li>Gaze-based ASD screening (Saliency4ASD)</li>
+          <li>Emotion detection systems for autistic children</li>
+          <li>Student risk prediction for early intervention</li>
+          <li>Interest in responsible & interpretable ML</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="section">
+    <h2 class="section-title">Research</h2>
+    <p class="section-subtitle">
+      Work at the intersection of machine learning, computer vision, and applied data science.
+    </p>
+
+    <div class="research-list">
+      <div class="research-item">
+        <h3>Classifying Gaze Patterns for ASD Screening</h3>
+        <p>IEEE ICITIIT, 2025 · Deep learning on gaze saliency for preemptive autism screening.</p>
+        <p class="research-meta">Computer vision · Healthcare · Neurodiversity</p>
+      </div>
+      <div class="research-item">
+        <h3>Synthetic Data Augmentation Using LLMs: Kamyr Digester Case Study</h3>
+        <p>IEEE ICEEICT, 2024 · LLM-driven synthetic time-series for industrial processes.</p>
+        <p class="research-meta">Time-series · Robustness · GenAI</p>
+      </div>
+      <div class="research-item">
+        <h3>Tender Coconut Classification using DenseNet</h3>
+        <p>IEEE SPIN, 2023 · Comparing classical ML vs deep CNNs for agricultural classification.</p>
+        <p class="research-meta">DenseNet · Image classification</p>
+      </div>
+      <div class="research-item">
+        <h3>Cricket Shot Recognition via OpenPose</h3>
+        <p>IEEE NMIC, 2023 · Pose-based shot recognition for broadcast cricket footage.</p>
+        <p class="research-meta">OpenPose · Sports analytics</p>
+      </div>
+      <div class="research-item">
+        <h3>COVID-19 Data Correlation Study</h3>
+        <p>IEEE STSNGC, 2022 · Analyzing pandemic indicators and cross-country patterns.</p>
+        <p class="research-meta">Epidemiology · Correlation analysis</p>
+      </div>
+      <div class="research-item">
+        <h3>Wine Quality & Yield Prediction</h3>
+        <p>Journal of Wine Research (Taylor &amp; Francis), 2025 · Statistical & ML methods for vineyard forecasting.</p>
+        <p class="research-meta">Regression · Agriculture · Time-series</p>
+      </div>
+    </div>
+
+    <p class="research-links">
+      5 IEEE publications · 1 journal article · 9 citations (h-index 2).<br>
+      <a href="https://scholar.google.com/citations?user=QO3ezwQAAAAJ&hl=en" target="_blank">Google Scholar Profile →</a>
+    </p>
+  </section>
+
+  <!-- Contact / Endgame -->
+  <section id="endgame" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">
+      Open to DS/ML internships, applied research collaborations, and thoughtful conversations about AI for social impact.
+    </p>
+
+    <div class="contact">
+      <p><strong>Email:</strong> <a href="mailto:ishanibhat4@gmail.com">ishanibhat4@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/ishani-bhat4" target="_blank">github.com/ishani-bhat4</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ishani-bhat/" target="_blank">linkedin.com/in/ishani-bhat</a></p>
+      <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=QO3ezwQAAAAJ&hl=en" target="_blank">Scholar Profile</a></p>
+    </div>
+  </section>
 
   <footer class="footer">
     <p>© <span id="year"></span> Ishani Bhat · Thoughtful moves only.</p>
